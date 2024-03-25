@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mytab {
+            display: flex;
+        }
+
+        .container {
+            width: 600px;
+            padding: 1rem;
+            border: 1px solid #c5c5c5;
+            border-radius: 10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            background: rgb(255, 161, 169);
+            padding: 0.5rem 0.5rem;
+            margin: 10px 0;
+            text-align: center;
+            border: 3px solid #dd7dad;
+            border-radius: 50px;
+            box-shadow: 2px 2px 5px gray;
+        }
+
+        label:hover {
+            cursor: pointer;
+            background: #FFF;
+        }
+
+        label+label {
+            margin-left: 5px;
+        }
+
+        .content1,
+        .content2,
+        .content3,
+        .content4 {
+            display: none;
+            /* border: 1px solid gray;
+            border-radius: 10px;
+            padding: 10px; */
+        }
+
+        /* 選擇誰要顯示 */
+        /* 藉由 radio 單一選項，當 radio 被勾選時，同層全體選擇器(~) 會找到對應的內容顯示 */
+        #tab1:checked~.content1 {
+            display: block;
+        }
+
+        #tab2:checked~.content2 {
+            display: block;
+        }
+
+        #tab3:checked~.content3 {
+            display: block;
+        }
+
+        #tab4:checked~.content4 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mytab">
+        <label for="tab1">tab01</label>
+        <label for="tab2">tab02</label>
+        <label for="tab3">tab03</label>
+        <label for="tab4">tab04</label>
+    </div>
+
+    <div class="container">
+        <input id="tab1" type="radio" name="tabControll" checked>
+        <input id="tab2" type="radio" name="tabControll">
+        <input id="tab3" type="radio" name="tabControll">
+        <input id="tab4" type="radio" name="tabControll">
+
+        <div class="content1" style="color: blue;">
+            ●1 聊天基層你的此外眼中改善走進就像傷害統計忘記回應辦公室，開口某些，是有在我收藏本頁學生，然後實現跟着請求，取得導致一名留在綜合天然，程式還有維修特別採取貸款出口前面，取得貼圖這樣網上直到預覽，也不過。
+        </div>
+
+        <div class="content2" style="color: rgb(255, 81, 29);">
+            ●2 聊天基層你的此外眼中改善走進就像傷害統計忘記回應辦公室，開口某些，是有在我收藏本頁學生，然後實現跟着請求，取得導致一名留在綜合天然，程式還有維修特別採取貸款出口前面，取得貼圖這樣網上直到預覽，也不過。
+        </div>
+
+        <div class="content3" style="color: rgb(14, 116, 36);">
+            ●3 聊天基層你的此外眼中改善走進就像傷害統計忘記回應辦公室，開口某些，是有在我收藏本頁學生，然後實現跟着請求，取得導致一名留在綜合天然，程式還有維修特別採取貸款出口前面，取得貼圖這樣網上直到預覽，也不過。
+        </div>
+
+        <div class="content4" style="color: rgb(25, 227, 241);">
+            ●4 聊天基層你的此外眼中改善走進就像傷害統計忘記回應辦公室，開口某些，是有在我收藏本頁學生，然後實現跟着請求，取得導致一名留在綜合天然，程式還有維修特別採取貸款出口前面，取得貼圖這樣網上直到預覽，也不過。
+        </div>
+
+    </div>
+</body>
+
+</html>
